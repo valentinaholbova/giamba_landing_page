@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Giamba - Countdown</title>
+</head>
+
+<header>
+  <div class="bg_video">
+    <video class="giambia show" autoplay muted loop id="myVideo">
+      <source src="video/myVideo2.mp4" type="video/mp4">
+    </video>
+    <div class="bg_overlay">
+
+    </div>
+  </div>
+<!--Responsive Navbar-->
+      <div class="header_logo">
+        <img class="mx-auto d-block" src="images/giamba_logo.svg" alt="...">
+      </div>
+
+      <div class="anouncement text-center container">
+        <h3 id="fs_date"><strong>Sep20 Collection Fashion Show</strong> - 22nd of September 2020</h3>
+      </div>
+
+
+      <div class="spacer container">
+
+      </div>
+</header>
+
+<body>
+<!--
+  <div class="figure_pic">
+    <img src="images/figure.png" alt="...">
+  </div>
+-->
+<style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+</style>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 22, 2020 18:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<div class="prolog container">
+  <p>In response to social distancing as a result of the current COVID-19 precautionary measures,<br> <strong>Giamba</strong> will be live-streaming its first fashion show across social media channels.</p>
+</div>
+
+
+          <div class="socials_panel">
+            <p>stay tuned on our media channels:</p>
+          </div>
+          <div class="cta_social_media2 d-block mx-auto text-center">
+             <a href="#" class="icon_social text-center">
+               <img class="linkedin_icon" src="images/icons_social_media/tiktok.svg">
+             </a>
+
+             <a href="#" class="icon_social text-center">
+               <img class="linkedin_icon" src="images/icons_social_media/instagram.svg">
+             </a>
+
+             <a href="#" class="icon_social text-center">
+               <img class="linkedin_icon" src="images/icons_social_media/snapchat.svg">
+             </a>
+
+            <!--
+            <a href="#" class="fa fa-facebook text-center"></a>
+            <a href="#" class="fa fa-instagram text-center"></a>
+            <a href="#" class="fa fa-linkedin text-center"></a>
+            -->
+          </div>
+
+
+
+
+</body>
+</html>

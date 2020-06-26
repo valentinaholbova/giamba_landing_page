@@ -1,0 +1,98 @@
+@import url('css/components/bg_video_loop.css');
+@import url('css/components/navbar.css');
+
+body {
+  display: block;
+  box-sizing: border-box;
+}
+
+header {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.header_logo {
+  position: relative;
+  z-index: 10;
+  padding: 40px;
+  margin-top: 10%;
+
+}
+
+.header_logo img {
+  width: 300px;
+
+}
+
+.figure_pic {
+  position: relative;
+  z-index: 13;
+  margin: 0 auto;
+  margin-left: 25%;
+  margin-top: 100px;
+}
+
+.figure_pic img {
+  width: 400px;
+}
+
+/*COUNT DOWN*/
+#demo {
+  position: relative;
+  z-index: 100;
+  color: white;
+  font-size: 60px;
+  margin-top: ;
+}
+
+.prolog {
+  position: relative;
+  z-index: 100;
+  font-weight:100;
+  color: white;
+  line-height: 32px;
+  margin-top: 30px;
+}
+
+.prolog p {
+  font-size: 25px;
+}
+
+.cta_social_media2 {
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+.socials_panel {
+  position: relative;
+  z-index: 100;
+  margin-top: 50px;
+  color: white;
+}
+
+.socials_panel p {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.anouncement {
+  position: relative;
+  z-index: 100;
+  margin-top: 30px;
+}
+
+.anouncement h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+

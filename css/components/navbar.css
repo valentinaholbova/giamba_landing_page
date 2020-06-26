@@ -1,0 +1,56 @@
+nav {
+  position: relative;
+  margin-top: -120px;
+}
+
+#ideavo_logo {
+  margin-top: -5px;
+}
+
+.bg-dark {
+    background-color: transparent!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.social_media {
+  margin-right: 18px;
+}
+
+.cta_social_media {
+margin-right: 10px;
+}
+
+.icon_social {
+  padding: 0 10px;
+}
+
+.icon_social a {
+  text-decoration: none;
+}
+
+.icon_social a:hover {
+  text-decoration: none;
+}
+
+.icon_social img {
+  height: 35px;
+  transition: 0.15s ease-in;
+}
+
+.icon_social img:hover {
+  opacity: 0.5;
+}
+
+.spacer {
+  position: relative;
+  z-index: 12;
+  margin-top: 30px;
+  width: 100%;
+  height: 1.5px;
+  background-color: white;
+}
